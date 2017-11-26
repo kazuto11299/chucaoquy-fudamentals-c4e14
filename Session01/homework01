@@ -1,0 +1,44 @@
+1.
+- using function type()
+- when you give a illegal variable name or a name that already exists python keyword/library
+ examples:
+ + 2001ultrainstinct = "super saiyan"
+ + f*#&you = 2001
+ + class = "C4E14"
+2.
+ r = int(input("Radius = ?"))
+ acreage = r*r*3.14
+ print("Area =", acreage)
+3.
+ c = int(input("Enter the temperature in CelsiusCelsius"))
+ f = c*1,8 + 32
+ print(c, "C =", f, "F")
+4.
+- A square
+ from turtle import *
+ color("Yellow")
+for i in range(4):
+  forward(100)
+  left(90)
+mainloop()
+- A right triangle
+from turtle import *
+color("Yellow")
+for i in range(3):
+  forward(100)
+  left(120)
+mainloop()
+- A circle
+from turtle import *
+color("Yellow")
+circle(100)
+left(9)
+mainloop()
+- Multi circles
+from turtle import *
+color("green")
+speed(-1)
+for i in range(100):
+  circle(100)
+  left(60)
+mainloop()
