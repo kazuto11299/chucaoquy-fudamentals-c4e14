@@ -28,3 +28,46 @@ while loop:
     else:
         print("This option cannot be performed!")
         loop = False
+
+
+# menu = ['T-Shirt', 'Sweater']
+# q = True
+# for i, item in enumerate(menu):
+#     print(i + 1, item, sep='. ')
+# while q:
+#     selection = input("Welcome to our shop, what do you want (C, R, U, D)? (Q to quit): ")
+#     if (selection == "C"):
+#         new_item = input("Enter Your New Item: ")
+#         menu.append(new_item)
+#         for i, item in enumerate(menu):
+#             print(item, sep='. ', end=' ')
+#         print(menu, sep =", ")
+#     if (upper.selection == "R"):
+#         for i,item in enumerate(menu):
+#             print(item, sep='. ', end=' ')
+#         print()
+#
+#     if (upper.selection == "U"):
+#         position = int(input("Update Position?: "))
+#         new = input("New item?: ")
+#         if (position > 0 and position < (len(menu) + 1)):
+#             menu[position - 1] = new
+#             for i,item in enumerate(menu):
+#                 print(item, sep='. ', end=' ')
+#             print()
+#         else:
+#             print("It's out of range!")
+#
+#     if (selection == "D"):
+#         position = int(input("Delete Position?: "))
+#         if (position > 0 and position < (len(menu) + 1)):
+#             menu.pop(position - 1)
+#             for i,item in enumerate(menu):
+#                 print(item, sep='. ', end=' ')
+#             print()
+#         else:
+#             print("It's out of range!")
+#
+#     if (selection == "Q"):
+#         print("Quit Complete!")
+#         q = False
