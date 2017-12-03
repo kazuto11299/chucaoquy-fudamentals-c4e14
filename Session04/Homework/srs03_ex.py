@@ -13,5 +13,5 @@ for i in range(2, a):
     if a % i == 0:
         print(a, "is not a prime number")
         break
-    elif a == i + 1:
+else:
         print(a, "is a prime number")
