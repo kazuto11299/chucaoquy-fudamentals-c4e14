@@ -14,4 +14,4 @@ for i in range(2, a):
         print(a, "is not a prime number")
         break
 else:
-        print(a, "is a prime number")
+    print(a, "is a prime number")
