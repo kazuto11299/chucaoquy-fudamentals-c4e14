@@ -6,7 +6,7 @@ num = input("Guess my chosen number? ")
 lo = 0
 hi = len(nums)
 guess = False
-while guess:
+while not guess:
     mid = (lo + hi)//2
     num = nums[mid]
     if num == n:
@@ -19,4 +19,3 @@ while guess:
     else:
         lo = mid + 1
         print("Unlucky! The number is in the right side")
-        print(lo, hi)
