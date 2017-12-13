@@ -1,0 +1,20 @@
+1. When coding, there are some certain function code that need to be used multiple times. Moreover, when the changes in the data of codes are needed, using function will help us out.
+Using function helps us to code shortly, makes codes easier to read. In addition, funtion can also be used for other code files.
+2. How to declair a function?
+def function_name(parameters/arguments):
+    function of the function
+3. How to use a funtion?
+call function
+ function_name()
+4. The return statement causes function to exit and hand back a value to its caller in order to use that value outside the function
+5. No
+6.
+- Arguments are specific inputs in the function
+- def function_name(parameters):
+    function of the function
+
+function_name(arguments)
+7.
+function_file.function_name()
+from function_file import function_name
+from function_file import *
