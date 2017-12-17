@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Intro</title>
+  </head>
+  <body>
+    <h1>ABOUT ME</h1>
+    {% for info in me %}
+      <p>{{ info }} : {{ me[info] }}</p>
+    {% endfor %}
+  </body>
+</html>

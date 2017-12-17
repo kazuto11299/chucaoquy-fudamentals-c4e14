@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate BMI</title>
+  </head>
+  <body>
+    <h3>Weight: {{ weight }} (kg)</h2>
+    <h3>height: {{ height }} (meter)</h2>
+    <h2>Your BMI: {{ bmi }}</h3>
+    <h1>Kết Luận:</h1>
+      {% if bmi < 16 %}
+      <p><b>Severely underweight!</b></p>
+      {% elif bmi < 18.5 %}
+      <p><b>Underweight!</b></p>
+      {% elif bmi < 25 %}
+      <p><b>Normal!</b></p>
+      {% elif bmi < 30 %}
+      <p><b>Overweight!</b></p>
+      {% else %}
+      <p><b>Obese!</b></p>
+      {% endif %}
+  </body>
+</html>
