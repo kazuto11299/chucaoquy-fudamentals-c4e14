@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>New Updated Accounts</h1>
+    <table border="1px">
+      <thead>
+        <th>Game</th>
+        <th>Account</th>
+        <th>Price</th>
+        <th>Contact</th>
+        <th>Occupied</th>
+        <th>Custom</th>
+      </thead>
+
+      <tbody>
+        {% for service in services %}
+        <tr>
+          <td>{{ service.game }}</td>
+          <td>{{ service.account }}</td>
+          <td>{{ service.price }}</td>
+          <td>{{ service.contact }}</td>
+          <td>
+            {% if service.occupied == True %}
+              Available
+            {% else %}
+              Unavailable
+            {% endif %}
+          </td>
+          <td>
+            <a href="#">Fix</a>
+            <a href="{{ url_for('delete', service_id = service.id) }}">Del</a>
+          </td>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </body>
+</html>

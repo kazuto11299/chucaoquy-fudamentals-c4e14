@@ -25,9 +25,9 @@ Service.drop_collection()
 
 for _ in range(30):
     service = Service(account = service_faker.name(),
-                      password = randint(100, 999),
                       game = choice(["lol", "csgo", "pubg"]),
                       price = choice(["1000/h", "1500/h", "2000/h"]),
                       contact = 0 + randint(100000000, 999999999),
+                      password = randint(100, 999),
                       occupied = choice([True, False]))
     service.save()

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Account Information</title>
+  </head>
+  <body>
+    Information {{ info_account }}
+    <table>
+      <tr>
+        <td><img src="../static/{{info_pic}}"></td>
+        <td><b>Account: </b><i>{{ info_account }}</i></td>
+        <td><b>Game: </b><i>{{ info_game }}</i></td>
+        <td><b>Price: </b><i>{{ info_price }}</i></td>
+        <td><b>Contact: </b><i>{{ info_contact }}</i></td>
+        <td><b>Status: </b><i>{{ info_occupied }}</i></td>
+      </tr>
+    </table>
+  </body>
+</html>
